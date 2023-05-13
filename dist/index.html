@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-sizzer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./game.js" async></script>
+</head>
+
+<body class="bg-blue-500">
+    <div class="main">
+        <h2 class="text-center font-bold text-4xl font-serif m-12">Rock-Paper-Sizzer </h2>
+        <h3 id="round" class="text-center font-serif text-cyan-50 text-3xl m-7 ">Round:<span>0</span> </h3>
+        <div class="container flex justify-center md:flex-row flex-col">
+            <div class="user border-2 px-16  py-20 rounded-lg bg-white">
+                <h1 id='usercount'
+                    class="font-medium font-serif text-3xl block relative mt-[-4rem] pb-[2rem] text-center">player - 0
+                </h1>
+                <div class="images grid-rows-3 gap-10">
+                    <input id="paper" value="paper" class="btn hover:bg-sky-700 rounded-full " type="image"
+                        src="./asserts/paper.png" alt="paper">
+                    <input id="rock" value="rock" class="btn  hover:bg-sky-700 rounded-full" type="image"
+                        src="./asserts/rock.png" alt="rock">
+                    <input id="scissor" value="scissor" class="btn  hover:bg-sky-700 rounded-full" type="image"
+                        src="./asserts/scissors.png" alt="scissor">
+                </div>
+                <h1 class="choice font-medium font-serif text-3xl block relative mb-[-4rem] pt-[2rem] text-center">Pick
+                    One!</h1>
+            </div>
+            <h2 id="vs" class="m-28 text-4xl font-medium text-center">VS</h2>
+            <div class="bot border-2 px-16 py-20 rounded-lg bg-white">
+                <h1 id='comptcount'
+                    class="font-medium font-serif text-3xl block relative mt-[-4rem] pb-[2rem] text-center">Computer- 0
+                </h1>
+
+                <img id="Botimg" class="botimage ml-[6.5rem]" src="./asserts/scissors.png" alt="paper">
+
+                <h1 class="botchoice font-medium font-serif text-3xl block relative mb-[-4rem] pt-[2rem] text-center">
+                    Waiting for
+                    the selection</h1>
+            </div>
+        </div>
+        <button
+            class="reset font-serif text-center text-xl bg-white rounded-full px-10 py-3 mt-10 block m-auto ">Reset</button>
+    </div>
+</body>
+
+</html>
